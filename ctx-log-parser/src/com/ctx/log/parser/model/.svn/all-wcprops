@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/19/ctx-log-parser/src/com/ctx/log/parser/model
+END
+SipMessageViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/17/ctx-log-parser/src/com/ctx/log/parser/model/SipMessageViewer.java
+END
+SipMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/18/ctx-log-parser/src/com/ctx/log/parser/model/SipMessage.java
+END
+SipParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/19/ctx-log-parser/src/com/ctx/log/parser/model/SipParser.java
+END
+SipCall.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/18/ctx-log-parser/src/com/ctx/log/parser/model/SipCall.java
+END
+MobicentsParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/12/ctx-log-parser/src/com/ctx/log/parser/model/MobicentsParser.java
+END

@@ -1,0 +1,35 @@
+package com.ctx.log.parser;
+
+import javax.swing.SwingUtilities;
+import com.ctx.log.parser.controller.Engine;
+import com.ctx.log.parser.model.SipParser;
+import com.ctx.log.parser.view.MainFrame;
+
+/**
+ * Parse Cisco CTX Engine Logs
+ * @author Gonzalo Gasca Meza
+ * Date: March 2013
+ * AT&T Labs 
+ * 
+ *  
+ */
+ 
+
+public class Application {
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {	
+				runApp();
+			}			
+		});
+	}
+	
+	public static void runApp() {
+			
+		SipParser model = new SipParser();
+		MainFrame view = new MainFrame(model);
+		Engine controller = new Engine(model,view);	
+		view.initMethod(controller);
+	
+	}
+}

@@ -1,0 +1,1044 @@
+[2013/03/23 05:01:37.166] IN 10.88.87.216:5060 --> 10.88.87.116:5060
+INVITE sip:200201202@10.88.87.116:5060;cic=201;transport=TCP SIP/2.0
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bKbde22be1-195c-4f9d-a26a-06af936a2f14_20bfd035_627530561899528;rport=5060
+Via: SIP/2.0/TCP 10.88.87.216:5060;branch=z9hG4bK+ea42a06b4fc693c5157391bf9f906c871+sip+1+a64f7daf;rport=46454
+From: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+To: <sip:200201202@10.88.87.116:5060;cic=201>
+CSeq: 100 INVITE
+Expires: 180
+Supported: replaces,timer
+Contact: <sip:10.88.87.216:5060;transport=tcp>
+Content-Type: application/sdp
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Max-Forwards: 13
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+User-Agent: TANDBERG/774 (MCX 4.6.3.17194) - Windows
+Session-Expires: 1800
+Accept: application/sdp,application/dtmf-relay
+Cisco-Guid: DD2592884AB-136C9C776C6-4FD84426467-6B5B3F2F8D3
+IXL_POLICY_REJECT: true
+Record-Route: <sip:10.88.87.116:5060;transport=tcp;appname=20bfd035;proxy=true;app_id=bde22be1-195c-4f9d-a26a-06af936a2f14;lr>
+Content-Length: 1063
+v=0
+o=tandberg 91406741866467 91406741866467 IN IP4 10.88.87.217
+s=-
+c=IN IP4 10.88.87.217
+t=0 0
+m=audio 16746 RTP/AVP 108 105 104 8 0 11 101
+b=TIAS:512000
+a=rtpmap:108 MP4A-LATM/90000
+a=rtpmap:105 G7221/16000
+a=rtpmap:104 G7221/16000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:11 L16/48000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=fmtp:105 bitrate=24000
+a=fmtp:104 bitrate=32000
+a=fmtp:101 0-15
+m=video 16750 RTP/AVP 126 97 96 34
+b=TIAS:512000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=rtpmap:96 H263-1998/90000
+a=rtpmap:34 H263/90000
+a=fmtp:126 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500;packetization-mode=1
+a=fmtp:97 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500
+a=fmtp:96 custom=1280,720,1;custom=1024,768,1;custom=1024,576,1;custom=800,600,1;cif4=1;custom=720,480,1;custom=640,480,1;custom=
+a=fmtp:34 cif4=1;cif=1;qcif=1;sqcif=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm fir
+a=content:main
+a=label:11
+a=answer:full
+-----------------------
+[2013/03/23 05:01:37.221] OUT 10.88.87.116:5060 --> 10.88.87.37:5060
+INVITE sip:3666@10.88.87.37:5060;transport=tcp SIP/2.0
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=30806878_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: <sip:200201202@10.88.87.116:5060;cic=201>
+CSeq: 100 INVITE
+Expires: 180
+Supported: replaces,timer
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Max-Forwards: 13
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+User-Agent: TANDBERG/774 (MCX 4.6.3.17194) - Windows
+Session-Expires: 1800
+Accept: application/sdp,application/dtmf-relay
+Cisco-Guid: DD2592884AB-136C9C776C6-4FD84426467-6B5B3F2F8D3
+IXL_POLICY_REJECT: true
+Contact: "matchung" <sip:matchung.movi@10.88.87.116:5060;transport=tcp>
+X-NextApp: EXTERNAL
+X-HTTP-Request-URL: http://10.88.87.116:8080/MeetMeIVR/MeetingId?var_waitTime=&var_sipAppId=(79928e7b-f445-4dd4-8946-b6bd4227c382:com.cisco.txbu.meetme.cca.callcontrol.meetmesrc.MeetmeApplication)&var_rejectInfo=NOPIN_FOUND&var_conferenceId=&var_ivrcId=8ad8d7f639a369590139b2336d9f02ba&var_invalidPinCount=0&var_circuitId=&var_hostpin=&var_invalidMeetingCount=0&var_vxmldir=&var_callId=matchung.movi&var_transferTarget=
+Content-Type: application/sdp
+Content-Length: 472
+v=0
+o=tandberg 91406741866467 91406741866467 IN IP4 10.88.87.217
+s=-
+c=IN IP4 10.88.87.217
+t=0 0
+m=audio 16746 RTP/AVP 108 105 104 8 0 11 101
+b=TIAS:512000
+a=rtpmap:108 MP4A-LATM/90000
+a=rtpmap:105 G7221/16000
+a=rtpmap:104 G7221/16000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:11 L16/48000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=fmtp:105 bitrate=24000
+a=fmtp:104 bitrate=32000
+a=fmtp:101 0-15
+-----------------------
+[2013/03/23 05:01:37.260] IN 10.88.87.37:5060 --> 10.88.87.116:5060
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627530637464528
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=30806878_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=6BB51A48-C8C
+Date: Sat, 23 Mar 2013 05:01:22 GMT
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 100 INVITE
+Allow: INVITE,OPTIONS,BYE,CANCEL,ACK,PRACK,UPDATE,REFER,SUBSCRIBE,NOTIFY,INFO,REGISTER
+Allow-Events: kpml,telephone-event
+Contact: <sip:3666@10.88.87.37:5060;transport=tcp>
+Supported: replaces,sdp-anat,timer
+Server: Cisco-SIPGateway/IOS-12.x
+Require: timer
+Session-Expires: 1800;refresher=uac
+Content-Type: application/sdp
+Content-Disposition: session;handling=required
+Content-Length: 231
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 9012 360 IN IP4 10.88.87.37
+s=SIP Call
+c=IN IP4 10.88.87.37
+t=0 0
+m=audio 29690 RTP/AVP 0 101
+c=IN IP4 10.88.87.37
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+-----------------------
+[2013/03/23 05:01:37.290] OUT 10.88.87.116:5060 --> 10.88.87.216:5060
+SIP/2.0 200 OK
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bKbde22be1-195c-4f9d-a26a-06af936a2f14_20bfd035_627530561899528;rport=5060
+Via: SIP/2.0/TCP 10.88.87.216:5060;branch=z9hG4bK+ea42a06b4fc693c5157391bf9f906c871+sip+1+a64f7daf;rport=46454
+Record-Route: <sip:10.88.87.116:5060;transport=tcp;appname=20bfd035;proxy=true;app_id=bde22be1-195c-4f9d-a26a-06af936a2f14;lr>
+CSeq: 100 INVITE
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+From: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+Contact: <sip:10.88.87.116:5060;transport=tcp>
+Warning: 100 10.88.87.116 "Service is running normally"
+Content-Type: application/sdp
+Date: Sat, 23 Mar 2013 05:01:22 GMT
+Allow: INVITE,OPTIONS,BYE,CANCEL,ACK,PRACK,UPDATE,REFER,SUBSCRIBE,NOTIFY,INFO,REGISTER
+Allow-Events: kpml
+Supported: replaces,sdp-anat,timer
+Require: timer
+Session-Expires: 1800;refresher=uac
+Content-Disposition: session;handling=required
+X-NextApp: EXTERNAL
+Content-Length: 231
+v=0
+o=CiscoSystemsSIP-GW-UserAgent 9012 360 IN IP4 10.88.87.37
+s=SIP Call
+c=IN IP4 10.88.87.37
+t=0 0
+m=audio 29690 RTP/AVP 0 101
+c=IN IP4 10.88.87.37
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+-----------------------
+[2013/03/23 05:01:37.567] IN 10.88.87.216:5060 --> 10.88.87.116:5060
+ACK sip:10.88.87.116:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bKbde22be1-195c-4f9d-a26a-06af936a2f14_20bfd035_627530977375528;rport=5060
+Via: SIP/2.0/TCP 10.88.87.216:5060;branch=z9hG4bK+b0881932f44ca637ecde65a8835df70e1+sip+1+a64f7db0;rport=46454
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+From: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+CSeq: 100 ACK
+Contact: <sip:10.88.87.216:5060;transport=tcp>
+Supported: replaces,100rel,timer
+Max-Forwards: 67
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+User-Agent: TANDBERG/774 (MCX 4.6.3.17194) - Windows
+Content-Length: 0
+-----------------------
+[2013/03/23 05:01:37.598] OUT 10.88.87.116:5060 --> 10.88.87.37:5060
+ACK sip:3666@10.88.87.37:5060;transport=tcp SIP/2.0
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 100 ACK
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=30806878_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=6BB51A48-C8C
+Max-Forwards: 70
+Supported: replaces,100rel,timer
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+User-Agent: TANDBERG/774 (MCX 4.6.3.17194) - Windows
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627531009741528
+Content-Length: 0
+-----------------------
+[2013/03/23 05:01:55.648] OUT 10.88.87.116:5060 --> 10.88.87.121:5060
+INVITE sip:20012@10.88.87.121:5060;transport=tcp SIP/2.0
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: <sip:200201202@10.88.87.116:5060;cic=201>
+CSeq: 100 INVITE
+Expires: 180
+Supported: replaces,timer
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Max-Forwards: 13
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+User-Agent: TANDBERG/774 (MCX 4.6.3.17194) - Windows
+Session-Expires: 1800
+Accept: application/sdp,application/dtmf-relay
+Cisco-Guid: DD2592884AB-136C9C776C6-4FD84426467-6B5B3F2F8D3
+IXL_POLICY_REJECT: true
+Contact: "matchung" <sip:matchung.movi@10.88.87.116:5060;transport=tcp>
+X-NextApp: EXTERNAL
+Content-Length: 0
+-----------------------
+[2013/03/23 05:01:58.666] OUT 10.88.87.116:5060 --> 10.88.87.37:5060
+BYE sip:3666@10.88.87.37:5060;transport=tcp SIP/2.0
+CSeq: 101 BYE
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=30806878_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=6BB51A48-C8C
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627552076784528
+Content-Length: 0
+-----------------------
+[2013/03/23 05:01:58.677] IN 10.88.87.121:5060 --> 10.88.87.116:5060
+SIP/2.0 180 Ringing
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+CSeq: 100 INVITE
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627552070596528
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+Contact: <sip:20012@10.88.87.121:5060;transport=tcp>;isfocus;x-cisco-tip
+User-Agent: TANDBERG Telepresence Server 8710 v2.3(1.55)
+Content-Length: 0
+-----------------------
+[2013/03/23 05:01:58.733] IN 10.88.87.37:5060 --> 10.88.87.116:5060
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627552076784528
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=30806878_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=6BB51A48-C8C
+Date: Sat, 23 Mar 2013 05:01:44 GMT
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Server: Cisco-SIPGateway/IOS-12.x
+CSeq: 101 BYE
+Reason: Q.850;cause=16
+P-RTP-Stat: PS=461,OS=73760,PR=1746,OR=136032,PL=0,JI=0,LA=0,DU=21
+Content-Length: 0
+-----------------------
+[2013/03/23 05:01:58.744] IN 10.88.87.121:5060 --> 10.88.87.116:5060
+SIP/2.0 200 OK
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+CSeq: 100 INVITE
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627552070596528
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+Contact: <sip:20012@10.88.87.121:5060;transport=tcp>;isfocus;x-cisco-tip
+User-Agent: TANDBERG Telepresence Server 8710 v2.3(1.55)
+Supported: timer
+Session-Expires: 1800;refresher=uas
+Allow: INVITE,ACK,CANCEL,OPTIONS,UPDATE,INFO,NOTIFY,BYE,REFER
+Content-Type: application/sdp
+Content-Length: 4178
+v=0
+o=CODIAN 1413191867 1413191867 IN IP4 10.88.87.121
+s=-
+i=TANDBERG Telepresence Server 8710 v2.3(1.55)
+c=IN IP4 10.88.87.121
+b=AS:4000
+t=0 0
+m=audio 53734 RTP/AVP 107 113 108 96 109 110 99 114 118 100 103 9 104 105 0 8 15 18 4 101
+a=rtpmap:107 MP4A-LATM/90000
+a=fmtp:107 profile-level-id=25;config=4101731A001100;object=23;bitrate=128000
+a=rtpmap:113 MP4A-LATM/90000
+a=fmtp:113 profile-level-id=24;object=23;bitrate=96000
+a=rtpmap:108 MP4A-LATM/90000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:96 mpeg4-generic/48000
+a=fmtp:96 profile-level-id=16;streamtype=5;config=B98C00;mode=AAC-hbr;sizeLength=13;indexLength=3;indexDeltaLength=3;constantDuration=480
+a=rtpmap:109 MP4A-LATM/90000
+a=fmtp:109 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:110 MP4A-LATM/90000
+a=fmtp:110 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:99 MP4A-LATM/32000
+a=fmtp:99 profile-level-id=2;object=2;bitrate=96000
+a=rtpmap:114 SIREN14/16000
+a=fmtp:114 bitrate=48000
+a=rtpmap:118 SIREN14/16000
+a=fmtp:118 bitrate=24000
+a=rtpmap:100 G7221/32000
+a=fmtp:100 bitrate=48000
+a=rtpmap:103 G7221/32000
+a=fmtp:103 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:104 G7221/16000
+a=fmtp:104 bitrate=32000
+a=rtpmap:105 G7221/16000
+a=fmtp:105 bitrate=24000
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:15 G728/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:4 G723/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+m=video 59908 RTP/AVP 126 97 98 34 31
+b=AS:4000
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,1;CUSTOM=1024,768,1;CUSTOM=1024,576,1;CIF4=1;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:31 H261/90000
+a=fmtp:31 CIF=1;QCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:main
+a=label:11
+m=application 58978 UDP/BFCP *
+a=floorctrl:s-only
+a=confid:73831160
+a=floorid:2 mstrm:12
+a=userid:11371
+a=connection:new
+m=application 60552 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=sendrecv
+m=video 57322 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:01:58.769] OUT 10.88.87.116:5060 --> 10.88.87.216:5060
+INVITE sip:10.88.87.216:5060;transport=tcp SIP/2.0
+CSeq: 1 INVITE
+From: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Max-Forwards: 70
+Contact: <sip:200201202@10.88.87.116:5060;transport=tcp>;x-cisco-tip;isfocus
+Route: <sip:10.88.87.116:5060;transport=tcp;appname=20bfd035;proxy=true;app_id=bde22be1-195c-4f9d-a26a-06af936a2f14;lr>
+Supported: timer
+Session-Expires: 1800;refresher=uas
+Allow: INVITE,ACK,CANCEL,OPTIONS,UPDATE,INFO,NOTIFY,BYE,REFER
+X-NextApp: EXTERNAL
+Content-Type: application/sdp
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627552180092528
+Content-Length: 4178
+v=0
+o=CODIAN 1413191867 1413191867 IN IP4 10.88.87.121
+s=-
+i=TANDBERG Telepresence Server 8710 v2.3(1.55)
+c=IN IP4 10.88.87.121
+b=AS:4000
+t=0 0
+m=audio 53734 RTP/AVP 107 113 108 96 109 110 99 114 118 100 103 9 104 105 0 8 15 18 4 101
+a=rtpmap:107 MP4A-LATM/90000
+a=fmtp:107 profile-level-id=25;config=4101731A001100;object=23;bitrate=128000
+a=rtpmap:113 MP4A-LATM/90000
+a=fmtp:113 profile-level-id=24;object=23;bitrate=96000
+a=rtpmap:108 MP4A-LATM/90000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:96 mpeg4-generic/48000
+a=fmtp:96 profile-level-id=16;streamtype=5;config=B98C00;mode=AAC-hbr;sizeLength=13;indexLength=3;indexDeltaLength=3;constantDuration=480
+a=rtpmap:109 MP4A-LATM/90000
+a=fmtp:109 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:110 MP4A-LATM/90000
+a=fmtp:110 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:99 MP4A-LATM/32000
+a=fmtp:99 profile-level-id=2;object=2;bitrate=96000
+a=rtpmap:114 SIREN14/16000
+a=fmtp:114 bitrate=48000
+a=rtpmap:118 SIREN14/16000
+a=fmtp:118 bitrate=24000
+a=rtpmap:100 G7221/32000
+a=fmtp:100 bitrate=48000
+a=rtpmap:103 G7221/32000
+a=fmtp:103 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:104 G7221/16000
+a=fmtp:104 bitrate=32000
+a=rtpmap:105 G7221/16000
+a=fmtp:105 bitrate=24000
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:15 G728/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:4 G723/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+m=video 59908 RTP/AVP 126 97 98 34 31
+b=AS:4000
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,1;CUSTOM=1024,768,1;CUSTOM=1024,576,1;CIF4=1;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:31 H261/90000
+a=fmtp:31 CIF=1;QCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:main
+a=label:11
+m=application 58978 UDP/BFCP *
+a=floorctrl:s-only
+a=confid:73831160
+a=floorid:2 mstrm:12
+a=userid:11371
+a=connection:new
+m=application 60552 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=sendrecv
+m=video 57322 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:01:59.135] IN 10.88.87.216:5060 --> 10.88.87.116:5060
+SIP/2.0 200 OK
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 1 INVITE
+From: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627552180092528;rport=5060
+Record-Route: <sip:10.88.87.116:5060;transport=tcp;appname=20bfd035;proxy=true;app_id=bde22be1-195c-4f9d-a26a-06af936a2f14;lr>
+Supported: replaces,timer
+Require: timer
+Contact: <sip:10.88.87.216:5060;transport=tcp>
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+Server: TANDBERG/774 (MCX 4.6.3.17194)
+Session-Expires: 1800;refresher=uas
+Min-SE: 90
+Content-Length: 1795
+v=0
+o=tandberg 91406741866467 91406741866468 IN IP4 10.88.87.217
+s=-
+c=IN IP4 10.88.87.217
+t=0 0
+m=audio 16746 RTP/AVP 108 105 104 8 0 101
+b=TIAS:512000
+a=rtpmap:108 MP4A-LATM/90000
+a=rtpmap:105 G7221/16000
+a=rtpmap:104 G7221/16000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:101 telephone-event/8000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=fmtp:105 bitrate=24000
+a=fmtp:104 bitrate=32000
+a=fmtp:101 0-15
+m=video 16754 RTP/AVP 126 97 96 34
+b=TIAS:512000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=rtpmap:96 H263-1998/90000
+a=rtpmap:34 H263/90000
+a=fmtp:126 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500;packetization-mode=1
+a=fmtp:97 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500
+a=fmtp:96 custom=1280,720,1;custom=1024,768,1;custom=1024,576,1;custom=800,600,1;cif4=1;custom=720,480,1;custom=640,480,1;custom=
+a=fmtp:34 cif4=1;cif=1;qcif=1;sqcif=1
+a=rtcp-fb:* nack pli
+a=content:main
+a=label:11
+m=application 0 TCP/BFCP *
+a=floorctrl:c-only
+a=confid:1
+a=floorid:2 mstrm:12
+a=userid:2
+a=setup:actpass
+a=connection:new
+m=application 16758 RTP/AVP 105
+a=rtpmap:105 H224/4800
+m=video 0 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:01:59.155] OUT 10.88.87.116:5060 --> 10.88.87.121:5060
+ACK sip:20012@10.88.87.121:5060;transport=tcp SIP/2.0
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 100 ACK
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+Max-Forwards: 70
+Supported: replaces,timer
+Require: timer
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+Server: TANDBERG/774 (MCX 4.6.3.17194)
+Session-Expires: 1800;refresher=uas
+Min-SE: 90
+Content-Type: application/sdp
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627552567195528
+Content-Length: 1795
+v=0
+o=tandberg 91406741866467 91406741866468 IN IP4 10.88.87.217
+s=-
+c=IN IP4 10.88.87.217
+t=0 0
+m=audio 16746 RTP/AVP 108 105 104 8 0 101
+b=TIAS:512000
+a=rtpmap:108 MP4A-LATM/90000
+a=rtpmap:105 G7221/16000
+a=rtpmap:104 G7221/16000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:101 telephone-event/8000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=fmtp:105 bitrate=24000
+a=fmtp:104 bitrate=32000
+a=fmtp:101 0-15
+m=video 16754 RTP/AVP 126 97 96 34
+b=TIAS:512000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=rtpmap:96 H263-1998/90000
+a=rtpmap:34 H263/90000
+a=fmtp:126 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500;packetization-mode=1
+a=fmtp:97 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500
+a=fmtp:96 custom=1280,720,1;custom=1024,768,1;custom=1024,576,1;custom=800,600,1;cif4=1;custom=720,480,1;custom=640,480,1;custom=
+a=fmtp:34 cif4=1;cif=1;qcif=1;sqcif=1
+a=rtcp-fb:* nack pli
+a=content:main
+a=label:11
+m=application 0 TCP/BFCP *
+a=floorctrl:c-only
+a=confid:1
+a=floorid:2 mstrm:12
+a=userid:2
+a=setup:actpass
+a=connection:new
+m=application 16758 RTP/AVP 105
+a=rtpmap:105 H224/4800
+m=video 0 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:01:59.929] IN 10.88.87.121:5060 --> 10.88.87.116:5060
+INVITE sip:matchung.movi@10.88.87.116:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.88.87.121:5060;branch=z9hG4bKc861d373;rport=64060
+Max-Forwards: 70
+From: "TANDBERG Telepresence Server 8710" <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+To: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 1 INVITE
+User-Agent: TANDBERG Telepresence Server 8710 v2.3(1.55)
+Allow: INVITE,ACK,CANCEL,OPTIONS,UPDATE,INFO,NOTIFY,BYE,REFER
+Contact: <sip:20012@10.88.87.121:5060;transport=tcp>;isfocus;x-cisco-tip
+Supported: timer
+Session-Expires: 1800;refresher=uac
+Content-Type: application/sdp
+Content-Length: 4178
+v=0
+o=CODIAN 1413191867 1413191868 IN IP4 10.88.87.121
+s=-
+i=TANDBERG Telepresence Server 8710 v2.3(1.55)
+c=IN IP4 10.88.87.121
+b=AS:4000
+t=0 0
+m=audio 53734 RTP/AVP 107 113 108 96 109 110 99 114 118 100 103 9 104 105 0 8 15 18 4 101
+a=rtpmap:107 MP4A-LATM/90000
+a=fmtp:107 profile-level-id=25;config=4101731A001100;object=23;bitrate=128000
+a=rtpmap:113 MP4A-LATM/90000
+a=fmtp:113 profile-level-id=24;object=23;bitrate=96000
+a=rtpmap:108 MP4A-LATM/90000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:96 mpeg4-generic/48000
+a=fmtp:96 profile-level-id=16;streamtype=5;config=B98C00;mode=AAC-hbr;sizeLength=13;indexLength=3;indexDeltaLength=3;constantDuration=480
+a=rtpmap:109 MP4A-LATM/90000
+a=fmtp:109 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:110 MP4A-LATM/90000
+a=fmtp:110 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:99 MP4A-LATM/32000
+a=fmtp:99 profile-level-id=2;object=2;bitrate=96000
+a=rtpmap:114 SIREN14/16000
+a=fmtp:114 bitrate=48000
+a=rtpmap:118 SIREN14/16000
+a=fmtp:118 bitrate=24000
+a=rtpmap:100 G7221/32000
+a=fmtp:100 bitrate=48000
+a=rtpmap:103 G7221/32000
+a=fmtp:103 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:104 G7221/16000
+a=fmtp:104 bitrate=32000
+a=rtpmap:105 G7221/16000
+a=fmtp:105 bitrate=24000
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:15 G728/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:4 G723/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+m=video 59908 RTP/AVP 126 97 98 34 31
+b=AS:4000
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,1;CUSTOM=1024,768,1;CUSTOM=1024,576,1;CIF4=1;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:31 H261/90000
+a=fmtp:31 CIF=1;QCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:main
+a=label:11
+m=application 58978 UDP/BFCP *
+a=floorctrl:s-only
+a=confid:73831160
+a=floorid:2 mstrm:12
+a=userid:11371
+a=connection:new
+m=application 60552 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=sendrecv
+m=video 57322 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:01:59.937] OUT 10.88.87.116:5060 --> 10.88.87.216:5060
+INVITE sip:10.88.87.216:5060;transport=tcp SIP/2.0
+CSeq: 2 INVITE
+From: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Max-Forwards: 70
+Contact: <sip:200201202@10.88.87.116:5060;transport=tcp>;x-cisco-tip;isfocus
+Route: <sip:10.88.87.116:5060;transport=tcp;appname=20bfd035;proxy=true;app_id=bde22be1-195c-4f9d-a26a-06af936a2f14;lr>
+Content-Type: application/sdp
+Session-Expires: 1800;refresher=uac
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627553348546528
+Content-Length: 4178
+v=0
+o=CODIAN 1413191867 1413191868 IN IP4 10.88.87.121
+s=-
+i=TANDBERG Telepresence Server 8710 v2.3(1.55)
+c=IN IP4 10.88.87.121
+b=AS:4000
+t=0 0
+m=audio 53734 RTP/AVP 107 113 108 96 109 110 99 114 118 100 103 9 104 105 0 8 15 18 4 101
+a=rtpmap:107 MP4A-LATM/90000
+a=fmtp:107 profile-level-id=25;config=4101731A001100;object=23;bitrate=128000
+a=rtpmap:113 MP4A-LATM/90000
+a=fmtp:113 profile-level-id=24;object=23;bitrate=96000
+a=rtpmap:108 MP4A-LATM/90000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=rtpmap:96 mpeg4-generic/48000
+a=fmtp:96 profile-level-id=16;streamtype=5;config=B98C00;mode=AAC-hbr;sizeLength=13;indexLength=3;indexDeltaLength=3;constantDuration=480
+a=rtpmap:109 MP4A-LATM/90000
+a=fmtp:109 profile-level-id=24;object=23;bitrate=56000
+a=rtpmap:110 MP4A-LATM/90000
+a=fmtp:110 profile-level-id=24;object=23;bitrate=48000
+a=rtpmap:99 MP4A-LATM/32000
+a=fmtp:99 profile-level-id=2;object=2;bitrate=96000
+a=rtpmap:114 SIREN14/16000
+a=fmtp:114 bitrate=48000
+a=rtpmap:118 SIREN14/16000
+a=fmtp:118 bitrate=24000
+a=rtpmap:100 G7221/32000
+a=fmtp:100 bitrate=48000
+a=rtpmap:103 G7221/32000
+a=fmtp:103 bitrate=24000
+a=rtpmap:9 G722/8000
+a=rtpmap:104 G7221/16000
+a=fmtp:104 bitrate=32000
+a=rtpmap:105 G7221/16000
+a=fmtp:105 bitrate=24000
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:15 G728/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:4 G723/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:ayVLoL49SicUJyJ822pGACtGhW6HxxnlAxKZTvYs
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+m=video 59908 RTP/AVP 126 97 98 34 31
+b=AS:4000
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e016;max-mbps=108000;max-fs=3600;max-dpb=5400
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,1;CUSTOM=1024,768,1;CUSTOM=1024,576,1;CIF4=1;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:34 H263/90000
+a=fmtp:34 CIF4=1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:31 H261/90000
+a=fmtp:31 CIF=1;QCIF=1
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:d3L+WNtZCJxJUggNtjs15NETLgdVR/+9a2+v9vrZ
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:main
+a=label:11
+m=application 58978 UDP/BFCP *
+a=floorctrl:s-only
+a=confid:73831160
+a=floorid:2 mstrm:12
+a=userid:11371
+a=connection:new
+m=application 60552 RTP/AVP 100
+a=rtpmap:100 H224/4800
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:bLGU/BjzizulK3TDmtHVzuDHi0RESNIE+GYiFAhf
+a=sendrecv
+m=video 57322 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=rtpmap:126 H264/90000
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=crypto:2 AES_CM_128_HMAC_SHA1_80 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn UNENCRYPTED_SRTCP
+a=crypto:3 AES_CM_128_HMAC_SHA1_32 inline:HW1LIAYVCowgKOmTldGu4u5d+NPUXsoqACR44qOn
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=sendrecv
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:02:00.163] IN 10.88.87.216:5060 --> 10.88.87.116:5060
+SIP/2.0 200 OK
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 2 INVITE
+From: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627553348546528;rport=5060
+Record-Route: <sip:10.88.87.116:5060;transport=tcp;appname=20bfd035;proxy=true;app_id=bde22be1-195c-4f9d-a26a-06af936a2f14;lr>
+Supported: replaces,timer
+Require: timer
+Contact: <sip:10.88.87.216:5060;transport=tcp>
+Content-Type: application/sdp
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+Server: TANDBERG/774 (MCX 4.6.3.17194)
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+Content-Length: 1795
+v=0
+o=tandberg 91406741866467 91406741866468 IN IP4 10.88.87.217
+s=-
+c=IN IP4 10.88.87.217
+t=0 0
+m=audio 16746 RTP/AVP 108 105 104 8 0 101
+b=TIAS:512000
+a=rtpmap:108 MP4A-LATM/90000
+a=rtpmap:105 G7221/16000
+a=rtpmap:104 G7221/16000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:101 telephone-event/8000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=fmtp:105 bitrate=24000
+a=fmtp:104 bitrate=32000
+a=fmtp:101 0-15
+m=video 16754 RTP/AVP 126 97 96 34
+b=TIAS:512000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=rtpmap:96 H263-1998/90000
+a=rtpmap:34 H263/90000
+a=fmtp:126 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500;packetization-mode=1
+a=fmtp:97 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500
+a=fmtp:96 custom=1280,720,1;custom=1024,768,1;custom=1024,576,1;custom=800,600,1;cif4=1;custom=720,480,1;custom=640,480,1;custom=
+a=fmtp:34 cif4=1;cif=1;qcif=1;sqcif=1
+a=rtcp-fb:* nack pli
+a=content:main
+a=label:11
+m=application 0 TCP/BFCP *
+a=floorctrl:c-only
+a=confid:1
+a=floorid:2 mstrm:12
+a=userid:2
+a=setup:actpass
+a=connection:new
+m=application 16758 RTP/AVP 105
+a=rtpmap:105 H224/4800
+m=video 0 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:02:00.186] OUT 10.88.87.116:5060 --> 10.88.87.121:5060
+SIP/2.0 200 OK
+To: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+Via: SIP/2.0/TCP 10.88.87.121:5060;branch=z9hG4bKc861d373;rport=64060
+CSeq: 1 INVITE
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+From: "TANDBERG Telepresence Server 8710" <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+Contact: <sip:10.88.87.116:5060;transport=tcp>
+Warning: 100 10.88.87.116 "Service is running normally"
+Content-Type: application/sdp
+Supported: replaces,timer
+Require: timer
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+Server: TANDBERG/774 (MCX 4.6.3.17194)
+Session-Expires: 1800;refresher=uac
+Min-SE: 90
+X-NextApp: EXTERNAL
+Content-Length: 1795
+v=0
+o=tandberg 91406741866467 91406741866468 IN IP4 10.88.87.217
+s=-
+c=IN IP4 10.88.87.217
+t=0 0
+m=audio 16746 RTP/AVP 108 105 104 8 0 101
+b=TIAS:512000
+a=rtpmap:108 MP4A-LATM/90000
+a=rtpmap:105 G7221/16000
+a=rtpmap:104 G7221/16000
+a=rtpmap:8 PCMA/8000/1
+a=rtpmap:0 PCMU/8000/1
+a=rtpmap:101 telephone-event/8000
+a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+a=fmtp:105 bitrate=24000
+a=fmtp:104 bitrate=32000
+a=fmtp:101 0-15
+m=video 16754 RTP/AVP 126 97 96 34
+b=TIAS:512000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=rtpmap:96 H263-1998/90000
+a=rtpmap:34 H263/90000
+a=fmtp:126 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500;packetization-mode=1
+a=fmtp:97 profile-level-id=42801f;max-mbps=108000;max-fs=3600;max-smbps=323500
+a=fmtp:96 custom=1280,720,1;custom=1024,768,1;custom=1024,576,1;custom=800,600,1;cif4=1;custom=720,480,1;custom=640,480,1;custom=
+a=fmtp:34 cif4=1;cif=1;qcif=1;sqcif=1
+a=rtcp-fb:* nack pli
+a=content:main
+a=label:11
+m=application 0 TCP/BFCP *
+a=floorctrl:c-only
+a=confid:1
+a=floorid:2 mstrm:12
+a=userid:2
+a=setup:actpass
+a=connection:new
+m=application 16758 RTP/AVP 105
+a=rtpmap:105 H224/4800
+m=video 0 RTP/AVP 98 126 97
+b=AS:768
+a=rtpmap:98 H263-1998/90000
+a=rtpmap:126 H264/90000
+a=rtpmap:97 H264/90000
+a=fmtp:98 CUSTOM=1280,720,6;CUSTOM=1024,768,6;CUSTOM=1024,576,5;CUSTOM=848,480,3;CUSTOM=800,600,4;CIF4=3;CUSTOM=512,288,1;CIF=1;CIF=1;QCIF=1
+a=fmtp:126 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350;packetization-mode=1
+a=fmtp:97 profile-level-id=42e00d;max-mbps=18000;max-fs=3600;max-dpb=1350
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=fingerprint:SHA-1 BC:46:6B:0E:00:0B:4D:20:49:D7:CF:EF:38:41:AF:A1:2B:7F:17:D1
+a=setup:actpass
+a=content:slides
+a=label:12
+-----------------------
+[2013/03/23 05:02:00.193] IN 10.88.87.121:5060 --> 10.88.87.116:5060
+ACK sip:10.88.87.116:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.88.87.121:5060;branch=z9hG4bKc861d374;rport=64060
+Max-Forwards: 70
+From: "TANDBERG Telepresence Server 8710" <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+To: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 1 ACK
+User-Agent: TANDBERG Telepresence Server 8710 v2.3(1.55)
+Contact: <sip:20012@10.88.87.121:5060;transport=tcp>;isfocus;x-cisco-tip
+Supported: timer
+Content-Length: 0
+-----------------------
+[2013/03/23 05:02:00.204] OUT 10.88.87.116:5060 --> 10.88.87.216:5060
+ACK sip:10.88.87.216:5060;transport=tcp SIP/2.0
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+CSeq: 2 ACK
+From: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+Max-Forwards: 70
+Route: <sip:10.88.87.116:5060;transport=tcp;appname=20bfd035;proxy=true;app_id=bde22be1-195c-4f9d-a26a-06af936a2f14;lr>
+Supported: timer
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627553617395528
+Content-Length: 0
+-----------------------
+[2013/03/23 05:02:06.873] IN 10.88.87.216:5060 --> 10.88.87.116:5060
+BYE sip:200201202@10.88.87.116:5060;transport=tcp SIP/2.0
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bKbde22be1-195c-4f9d-a26a-06af936a2f14_20bfd035_627560281657528;rport=5060
+Via: SIP/2.0/TCP 10.88.87.216:5060;branch=z9hG4bK+c4430c649d14805b4473b3ae944d04b91+sip+1+a64f7db5;rport=46454
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+From: "matchung" <sip:matchung.movi@10.88.87.216:5060>;tag=10.88.87.216+1+cb143c93+79d8c20
+To: <sip:200201202@10.88.87.116:5060;cic=201>;tag=85394146_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+CSeq: 101 BYE
+Supported: replaces,timer
+Max-Forwards: 67
+Allow: INVITE,ACK,CANCEL,BYE,INFO,OPTIONS,REFER,NOTIFY
+User-Agent: TANDBERG/774 (MCX 4.6.3.17194) - Windows
+Content-Length: 0
+-----------------------
+[2013/03/23 05:02:06.957] OUT 10.88.87.116:5060 --> 10.88.87.121:5060
+BYE sip:20012@10.88.87.121:5060;transport=tcp SIP/2.0
+CSeq: 101 BYE
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+To: "TANDBERG Telepresence Server 8710" <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Max-Forwards: 70
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627560368620528
+Content-Length: 0
+-----------------------
+[2013/03/23 05:02:06.970] IN 10.88.87.121:5060 --> 10.88.87.116:5060
+SIP/2.0 200 OK
+CSeq: 101 BYE
+From: <sip:matchung.movi@10.88.87.216:5060>;tag=59156967_ec32e3ad_79928e7b-f445-4dd4-8946-b6bd4227c382
+Call-ID: f8e4f32f3b54cd94ada4797d04281009@10.88.87.216
+Via: SIP/2.0/TCP 10.88.87.116:5060;branch=z9hG4bK79928e7b-f445-4dd4-8946-b6bd4227c382_ec32e3ad_627560368620528
+To: "TANDBERG Telepresence Server 8710" <sip:200201202@10.88.87.116:5060;cic=201>;tag=E21A5266C0790000
+Content-Length: 0
+-----------------------

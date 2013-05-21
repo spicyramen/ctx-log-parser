@@ -1,0 +1,140 @@
+package com.ctx.log.parser.view;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.event.EventListenerList;
+
+
+public class MenuPanel extends JFrame implements ActionListener  {
+	
+	
+	private static final long serialVersionUID = 1L;
+	private JMenuBar menuBar;
+	private JFileChooser fileChooser;
+	private File fileSelected;
+	private AnalysisListener analysisListener;
+	private EventListenerList listenerList = new EventListenerList();
+	
+	/**
+	 * 
+	 */
+
+	
+	public MenuPanel(){
+		
+		menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		JMenu fileMenu = new JMenu("File");
+	    JMenu aboutMenu = new JMenu("About");
+	    menuBar.add(fileMenu);
+	    menuBar.add(aboutMenu);
+	    
+	    JMenuItem openFileAction = new JMenuItem("Open File");
+	    JMenuItem appendFileAction = new JMenuItem("Append File");
+	    JMenuItem exitAction = new JMenuItem("Exit");
+	    JMenuItem runAction = new JMenuItem("Run Analysis");
+	    JMenuItem displayAction = new JMenuItem("Display Calls");
+	    fileMenu.add(openFileAction); 
+	    fileMenu.add(appendFileAction); 
+	    fileMenu.add(runAction);
+	    fileMenu.add(displayAction);
+	    fileMenu.add(exitAction);
+	    
+	    
+	    openFileAction.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	
+            	fileChooser = new JFileChooser();
+        	    fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        	    fileChooser.setSelectedFile(fileChooser.getCurrentDirectory());
+        	    fileChooser.setDialogTitle("File Chooser");
+        	    fileChooser.setMultiSelectionEnabled(false);  
+        	    int retVal = fileChooser.showOpenDialog(MenuPanel.this);
+        	    AnalysisFormEvent loadFile = new AnalysisFormEvent("LOAD_FILE");
+        	    
+        	    if (retVal == JFileChooser.APPROVE_OPTION) {
+        	    	fileSelected = fileChooser.getSelectedFile();
+        	    	SendParseEvent(new ParseEvent(this,"INFO Loading file...\n"));
+        	    	loadFile.setFileName(fileSelected.getAbsolutePath());
+        	    	initAnalysisEvent(loadFile);
+        	    }   
+        	    
+            }
+        });
+	    
+	    runAction.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	initAnalysisEvent(new AnalysisFormEvent("START_CTC_ENGINE"));
+            }
+        });
+	    
+	    displayAction.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	initAnalysisEvent(new AnalysisFormEvent("START_DISPLAY_CALLS"));
+            }
+        });
+	    
+	    exitAction.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+	    
+	    
+	    
+	}
+	
+
+	public JMenuBar returnMenuBar() {
+		return menuBar;
+	}
+
+	public void setAnalysisListener(AnalysisListener analysisListener) {
+		this.analysisListener = analysisListener;
+	}
+	
+	public void initAnalysisEvent(AnalysisFormEvent event) {
+		if(analysisListener != null) {
+			analysisListener.sendEventLogAnalysis(event);
+		}
+	}
+	
+	
+	public void SendParseEvent(ParseEvent event) {
+		Object[] listeners = listenerList.getListenerList();
+		for (int i=0; i< listeners.length;i+=2) {
+			if(listeners[i] == ParseListener.class) {
+				((ParseListener)listeners[i+1]).ParseEventOccurred(event);
+			}
+		}
+	}
+
+	public void addParseListener(ParseListener listener) {
+		listenerList.add(ParseListener.class, listener);
+	}
+
+	public void deleteParseListener(ParseListener listener) {
+		listenerList.remove(ParseListener.class, listener);
+	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+	
+}

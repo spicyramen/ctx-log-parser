@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/18/ctx-log-parser/src/com/ctx/log/parser/view
+END
+FormPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/18/ctx-log-parser/src/com/ctx/log/parser/view/FormPanel.java
+END
+AnalysisListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/7/ctx-log-parser/src/com/ctx/log/parser/view/AnalysisListener.java
+END
+ToolBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/8/ctx-log-parser/src/com/ctx/log/parser/view/ToolBar.java
+END
+AnalysisFormEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/7/ctx-log-parser/src/com/ctx/log/parser/view/AnalysisFormEvent.java
+END
+ParseListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/5/ctx-log-parser/src/com/ctx/log/parser/view/ParseListener.java
+END
+TextPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/8/ctx-log-parser/src/com/ctx/log/parser/view/TextPanel.java
+END
+ParseEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/8/ctx-log-parser/src/com/ctx/log/parser/view/ParseEvent.java
+END
+MenuPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/18/ctx-log-parser/src/com/ctx/log/parser/view/MenuPanel.java
+END
+MainFrame.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/18/ctx-log-parser/src/com/ctx/log/parser/view/MainFrame.java
+END
+StatusPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/9/ctx-log-parser/src/com/ctx/log/parser/view/StatusPanel.java
+END

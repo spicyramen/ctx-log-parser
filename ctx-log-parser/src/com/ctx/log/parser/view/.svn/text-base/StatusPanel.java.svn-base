@@ -1,0 +1,53 @@
+package com.ctx.log.parser.view;
+
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import javax.swing.border.BevelBorder;
+
+public class StatusPanel extends JPanel {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JLabel statusLabel;
+	private Icon logoGreen;
+	private Icon logoYellow;
+	private Icon logoRed;
+	
+	public StatusPanel() {
+		
+		
+		logoGreen = new ImageIcon("Images/green_icon.png");	
+		logoYellow = new ImageIcon("Images/yellow_icon.png");
+		logoRed = new ImageIcon("Images/red_icon.jpg");	
+		
+		setBorder(new BevelBorder(BevelBorder.LOWERED));
+		statusLabel = new JLabel("Application started",logoGreen,JLabel.CENTER);
+		
+		statusLabel.setHorizontalAlignment(SwingConstants.LEFT);
+		add(statusLabel);
+	}
+	
+	public void appendText(String text) {
+		statusLabel.setText(text);		
+	}
+	
+	
+	public void displayOk() {
+		statusLabel.setIcon(logoGreen);
+	}
+	
+	public void displayWarn() {
+		statusLabel.setIcon(logoYellow);
+	}
+	
+	public void displayError() {
+		statusLabel.setIcon(logoRed);
+	}
+	
+}

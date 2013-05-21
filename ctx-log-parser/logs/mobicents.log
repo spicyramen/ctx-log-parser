@@ -1,0 +1,69 @@
+19:21:17,046 INFO  [gov.nist.javax.sip.stack.SIPTransactionStack] (SIP-TCP-Core-PipelineThreadpool-29) <message
+from="192.168.1.69:49954" 
+to="192.168.1.69:5062" 
+time="1366244477046"
+isSender="false" 
+transactionId="z9hg4bkxukx80ncp7tdcteo77hutkwhxpmahisq" 
+callId="7ed1c98e-5c9b-8130-f9ee-9350b0404459" 
+firstLine="REGISTER sip:linkqbox.com SIP/2.0" 
+>
+<![CDATA[REGISTER sip:linkqbox.com SIP/2.0
+Via: SIP/2.0/WS 192.168.1.69:49954;branch=z9hG4bKxUKX80nCp7tDcTeO77hutkwhXPMahIsq;rport=49954;received=192.168.1.69
+From: "WebSockets" <sip:+14082186575@linkqbox.com>;tag=31Oo0aGqflHLiXKbgCDt
+To: "WebSockets" <sip:+14082186575@linkqbox.com>
+Contact: "WebSockets" <sip:+14082186575@192.168.1.69:49954;rtcweb-breaker=no;transport=ws>;expires=200;click2call=no;+g.oma.sip-im;+audio;language="en,fr"
+Call-ID: 7ed1c98e-5c9b-8130-f9ee-9350b0404459
+CSeq: 25094 REGISTER
+Max-Forwards: 70
+User-Agent: IM-client/OMA1.0 sipML5-v1.2013.03.27
+Organization: Doubango Telecom
+Content-Length: 0
+
+]]>
+</message>
+
+19:22:37,267 INFO  [gov.nist.javax.sip.stack.SIPTransactionStack] (SIP-TCP-Core-PipelineThreadpool-0) <message
+from="192.168.1.69:49954" 
+to="192.168.1.69:5062" 
+time="1366244557267"
+isSender="false" 
+transactionId="z9hg4bkrs9ncaeqiquh3ubb309o5domqyxho93x" 
+callId="084a9d1a-4151-34cc-6e4c-ecfd018ef16b" 
+firstLine="BYE sip:192.168.1.69:5062;transport=ws SIP/2.0" 
+>
+<![CDATA[BYE sip:192.168.1.69:5062;transport=ws SIP/2.0
+Via: SIP/2.0/WS 192.168.1.69:49954;branch=z9hG4bKRS9NCaEqIqUh3ubB309O5DOMqyXho93X;rport=49954;received=192.168.1.69
+From: "WebSockets" <sip:+14082186575@linkqbox.com>;tag=yKLD8p8nMcTPxnh82rPM
+To: <sip:22223333@videolab.att.com>;tag=50068162_700d280e_b3721e10-59ed-41be-8d3f-484c71f229f3
+Call-ID: 084a9d1a-4151-34cc-6e4c-ecfd018ef16b
+CSeq: 62212 BYE
+Max-Forwards: 70
+Accept-Contact: *;+g.oma.sip-im
+Accept-Contact: *;+sip.ice
+Accept-Contact: *;language="en,fr"
+User-Agent: IM-client/OMA1.0 sipML5-v1.2013.03.27
+Organization: Doubango Telecom
+Content-Length: 0
+
+]]>
+</message>
+
+19:22:37,269 INFO  [gov.nist.javax.sip.stack.SIPTransactionStack] (SIP-TCP-Core-PipelineThreadpool-0) <message
+from="192.168.1.69:5062" 
+to="192.168.1.69:49954" 
+time="1366244557269"
+isSender="true" 
+transactionId="z9hg4bkrs9ncaeqiquh3ubb309o5domqyxho93x" 
+callId="084a9d1a-4151-34cc-6e4c-ecfd018ef16b" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+To: <sip:22223333@videolab.att.com>;tag=50068162_700d280e_b3721e10-59ed-41be-8d3f-484c71f229f3
+Via: SIP/2.0/WS 192.168.1.69:49954;branch=z9hG4bKRS9NCaEqIqUh3ubB309O5DOMqyXho93X;rport=49954;received=192.168.1.69
+CSeq: 62212 BYE
+Call-ID: 084a9d1a-4151-34cc-6e4c-ecfd018ef16b
+From: "WebSockets" <sip:+14082186575@linkqbox.com>;tag=yKLD8p8nMcTPxnh82rPM
+Content-Length: 0
+
+]]>
+</message>
