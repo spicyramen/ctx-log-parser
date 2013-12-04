@@ -46,7 +46,7 @@ public class MenuPanel extends JFrame implements ActionListener  {
 	    JMenuItem exitAction = new JMenuItem("Exit");
 	    
 	    JMenuItem runAction = new JMenuItem("Start Analysis");
-	    JMenuItem displayAction = new JMenuItem("Display Calls");
+	    JMenuItem displayAction = new JMenuItem("Sip Flow");
 	    
 	    JMenuItem prefsAction = new JMenuItem("Preferences");
 	    JMenuItem aboutAction = new JMenuItem("About");
@@ -54,7 +54,7 @@ public class MenuPanel extends JFrame implements ActionListener  {
 	    
 	    fileMenu.add(openFileAction); 
 	    fileMenu.add(appendFileAction); 
-	    fileMenu.add(openFolderAction); 
+	    fileMenu.add(openFolderAction);
 	    fileMenu.add(runAction);
 	    fileMenu.add(displayAction);
 	    fileMenu.add(exitAction);
@@ -79,6 +79,7 @@ public class MenuPanel extends JFrame implements ActionListener  {
         	    if (retValueFile == JFileChooser.APPROVE_OPTION) {
         	    	fileSelected = fileChooser.getSelectedFile();
         	    	SendParseEvent(new ParseEvent(this,"INFO Loading file...\n"));
+        	    	// Defect when Loading same file name after loading Menu
         	    	loadFile.setFileName(fileSelected.getAbsolutePath());
         	    	initAnalysisEvent(loadFile);
         	    }   

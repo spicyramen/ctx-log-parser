@@ -794,6 +794,10 @@ public class SipParser {
 	public void emptySipCalls() {
 		mapCalls.clear();
 	}
+	
+	public void emptySipMessagesFormatted() {
+		sipMessagesFormatted.clear();
+	}
 
 	public void printMapCalls (Map<String,SipCall> mp) {
 		for (Entry<String, SipCall> entry : mp.entrySet()) {

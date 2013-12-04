@@ -9,7 +9,7 @@ import com.ctx.log.parser.view.MainFrame;
  * Purpose: Parse SIP Logs
  * 
  * @author Gonzalo Gasca Meza
- * Oxford University
+ * University of Oxford
  * Department of Computer Science, Wolfson Building,  
  * Parks Rd, Oxford OX1, United Kingdom
  * +44 1865 273838

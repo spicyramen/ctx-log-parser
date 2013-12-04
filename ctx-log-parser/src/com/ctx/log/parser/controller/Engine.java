@@ -2,6 +2,7 @@ package com.ctx.log.parser.controller;
 
 import javax.swing.SwingUtilities;
 import com.ctx.log.parser.model.DetectFileType;
+import com.ctx.log.parser.model.GenerateSipFile;
 import com.ctx.log.parser.model.SipParser;
 import com.ctx.log.parser.view.AnalysisFormEvent;
 import com.ctx.log.parser.view.AnalysisListener;
@@ -14,13 +15,16 @@ public class Engine implements AnalysisListener{
 	private MainFrame ui;
 	private DetectFileType id;
 	private String fileType;
+	private GenerateSipFile newDiagramFile;
 	
 	public Engine(SipParser model, MainFrame view) {
 		
+		this.fileType = "";
 		this.model = model;
 		this.ui = view;
 		this.id = new DetectFileType();
-		this.fileType = "";
+		this.newDiagramFile = new GenerateSipFile();
+		
 	}
 
 	
@@ -35,20 +39,24 @@ public class Engine implements AnalysisListener{
 		if (event.getCommand().equals("LOAD_FILE")) {
 	
 			id.setEngineFile(event.getFileName());
-					
-			
+						
 			if(!id.isFileProcessed()) { 
 				String logType = id.DetectLogType();
-				if (logType.contains("CTC_ENGINE")) {
-					
+				if (logType.contains("CISCO_CTX")) {				
 					model.setEngineFile(event.getFileName());
-					logType = "CTX log detected.";
+					logType = "Cisco CTX log detected.";
 					ui.printStatusMessage(logType + " FileName: " + event.getFileName(),1);
-					fileType = "CTC_ENGINE";
+					fileType = "CISCO_CTX";
+				}
+				else if (logType.contains("CISCO_CUCM")) {
+					model.setEngineFile(event.getFileName());
+					logType = "Cisco CUCM log detected.";
+					ui.printStatusMessage(logType + " FileName: " + event.getFileName(),1);
+					fileType = "CISCO_CUCM";
 				}
 				else if (logType.contains("MOBICENTS")) {
 					model.setEngineFile(event.getFileName());
-					logType = "Mobicents log detected.";
+					logType = "Telestax Mobicents log detected.";
 					ui.printStatusMessage(logType + " FileName: " + event.getFileName(),1);
 					fileType = "MOBICENTS";
 				}
@@ -69,7 +77,7 @@ public class Engine implements AnalysisListener{
 		
 		else if (event.getCommand().equals("PROCESS_LOG_FILE")) {
 			
-			if (fileType.contains("CTC_ENGINE")) {
+			if (fileType.contains("CISCO_CTX")) {
 				
 				if (!model.getEngineFile().equals("") && model.getEngineFile()!=null ) {
 					
@@ -81,11 +89,12 @@ public class Engine implements AnalysisListener{
 						ui.printStatusMessage("Processing log...  ",0);
 						
 						SwingUtilities.invokeLater(new Runnable() {
-					        public void run() {
-					        					
+							
+					        public void run() {					
 					        		model.setDisplay(false);
-					        		model.emptySipMessages();
 					        		model.emptySipCalls();
+					        		model.emptySipMessages();
+					        		model.emptySipMessagesFormatted();
 					        		model.parseCtxFile();		//	TODO: Improve File Parse algorithm		        		
 					        		model.processCtxSipMessagesDetails();	
 					        		model.getErrorsFound();	
@@ -95,6 +104,46 @@ public class Engine implements AnalysisListener{
 					        		ui.printStatusMessage("Log analysis completed. ",0);
 					        		ui.showProgressBar(false);			        	
 					        	
+					        }
+					    });
+					}
+					else {
+						
+						ui.printStatusMessage("File already processed ",2);
+		        	}
+					
+					
+				}
+				
+				else {
+					ui.printStatusMessage("No file loaded",2);	
+					
+				}
+			}
+			else if (fileType.contains("CISCO_CUCM")) {
+				if (!model.getEngineFile().equals("") && model.getEngineFile()!=null ) {
+					
+					if (!model.isFileProcessed()) {	
+						
+						ui.clearTextPanel();
+						ui.setProgresBarIndeterminate();
+						ui.showProgressBar(true);
+						ui.printStatusMessage("Processing log...  ",0);
+						
+						SwingUtilities.invokeLater(new Runnable() {
+					        public void run() {		        					    
+					        		model.setDisplay(false);  		
+					        		model.emptySipCalls();
+					        		model.emptySipMessages();
+					        		model.emptySipMessagesFormatted();
+					        	//	model.parseMobicentsFile();
+					        	//	model.processMobicentsSipMessagesDetails();
+					        		model.getErrorsFound();
+					        		ui.printCallsNumber(model.getNumCalls());
+					        		ui.printMessagesNumber(model.getSipMessagesNumberFound());
+					        		ui.printMessages(model.getSipMessagesDetailedInfo(true));	
+					        		ui.printStatusMessage("Log analysis completed. ",0);
+					        		ui.showProgressBar(false);			        	
 					        }
 					    });
 					}
@@ -122,11 +171,11 @@ public class Engine implements AnalysisListener{
 						ui.printStatusMessage("Processing log...  ",0);
 						
 						SwingUtilities.invokeLater(new Runnable() {
-					        public void run() {
-					        					    
-					        		model.setDisplay(false);
+					        public void run() {		        					    
+					        		model.setDisplay(false);  		
+					        		model.emptySipCalls();
 					        		model.emptySipMessages();
-					        		model.emptySipCalls();			        		
+					        		model.emptySipMessagesFormatted();
 					        		model.parseMobicentsFile();
 					        		model.processMobicentsSipMessagesDetails();
 					        		model.getErrorsFound();
@@ -135,7 +184,6 @@ public class Engine implements AnalysisListener{
 					        		ui.printMessages(model.getSipMessagesDetailedInfo(true));	
 					        		ui.printStatusMessage("Log analysis completed. ",0);
 					        		ui.showProgressBar(false);			        	
-					        	
 					        }
 					    });
 					}
@@ -175,10 +223,13 @@ public class Engine implements AnalysisListener{
 			if (!model.getEngineFile().equals("") && model.getEngineFile()!=null ) {		
 				
 				if(model.getSipMessagesFormattedNumber() > 0 && !model.isDisplayed()) {
+					
 					ui.printStatusMessage("Displaying calls...",0);
-					ui.printMessages(model.getSipMessagesContentFormat());
+					//ui.printMessages(model.getSipMessagesContentFormat());
 					ui.printStatusMessage("Total messages displayed: " + model.getSipMessagesFormattedNumber(),0);
-					model.setDisplay(true);
+					ui.drawDiagram(newDiagramFile.initDiagram(model.getSipMessagesContentFormat()));
+					model.setDisplay(true);	
+					
 				}
 				else if (model.isDisplayed()) {
 					

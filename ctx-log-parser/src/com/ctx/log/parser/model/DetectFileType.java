@@ -34,7 +34,7 @@ public String DetectLogType() {
 				
 					if (fileLine.matches(timeStampRegex + "(.*)")){
 						fileProcessed = true;
-						return "CTC_ENGINE";
+						return "CISCO_CTX";
 					}
 					if (fileLine.matches(mobicentsTimeStampRegex + "(.*)")){
 						fileProcessed = true;

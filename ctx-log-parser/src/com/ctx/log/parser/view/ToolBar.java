@@ -23,7 +23,7 @@ public class ToolBar extends JPanel implements ActionListener {
 		
 		setBorder(BorderFactory.createEtchedBorder());	
 		runButton = new JButton("Start analysis");
-		displayButton = new JButton("Display calls");
+		displayButton = new JButton("SIP Flow");
 		
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		add(runButton);
@@ -32,7 +32,6 @@ public class ToolBar extends JPanel implements ActionListener {
 		runButton.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//SendParseEvent(new ParseEvent(this,"Running analysis...\n"));
 				initAnalysisEvent(new AnalysisFormEvent("PROCESS_LOG_FILE"));
 			}
 		});

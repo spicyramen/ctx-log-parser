@@ -15,7 +15,7 @@ private ToolBar toolBar;
 private FormPanel formPanel;
 private MenuPanel menuBar;
 private StatusPanel statusPanel;
-private String version = "2.00.10";
+private String version = "1.00.11";
 
 private static final long serialVersionUID = 1L;
 
@@ -127,6 +127,17 @@ private static final long serialVersionUID = 1L;
 	
 	public void setProgresBarIndeterminate() {
 		statusPanel.setProgressBarIndeterminate();
+	}
+
+
+	public void drawDiagram(String tempDiagramFile) {	
+		try {
+			textPanel.generateDiagram(tempDiagramFile);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 }
